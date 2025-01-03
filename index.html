@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Primary Meta Tags -->
+        <title>The SMP伺服器</title>
+        <meta name="title" content="The SMP" />
+        <meta name="description" content="你在尋找一個真正純正的生存伺服器嗎？
+                加入 <strong>The SMP</strong>伺服器，
+                我們提供完全原味的 Minecraft 體驗，
+                只有少數幾個插件來優化伺服器管理，確保流暢的遊戲過程！
+                這裡沒有繁瑣的規則，沒有<strong>管理員</strong>干預，
+                讓玩家自由發揮，只有服主專注於伺服器的開發與管理。" />
+
+       
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="assets/styles/style.css" />
+    </head>
+    <body>
+        <main>
+            <h1>The SMP伺服器</h1>
+            <button onclick="copyIp()">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.666 3.888A2.25 2.25 0 0013.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 01-.75.75H9a.75.75 0 01-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 01-2.25 2.25H6.75A2.25 2.25 0 014.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 011.927-.184"
+                    />
+                </svg>
+                <!-- Remember to change the ip in the copyIp function -->
+                mc.thesmp.us.kg
+            </button>
+            <p>
+                你在尋找一個真正純正的生存伺服器嗎？
+                加入 <strong>The SMP</strong>伺服器，
+                我們提供完全原味的 Minecraft 體驗，
+                只有少數幾個插件來優化伺服器管理，確保流暢的遊戲過程！
+                這裡沒有繁瑣的規則，沒有<strong>管理員</strong>干預，
+                讓玩家自由發揮，只有服主專注於伺服器的開發與管理。
+            </p>
+            <nav>
+                <a href="" title="">兌換商店</a>
+                <a href=".\loading-vote.html" title="">投票</a>
+                <a href=".\rules.html" title="">規則</a>
+                <a href=".\nofile.html" title="">圖庫</a>
+                <!-- <a href="" title="" target="_blank">Example</a> -->
+            </nav>
+        </main>
+        <script>
+            function copyIp() {
+                navigator.clipboard
+                    .writeText("mc.thesmp.us.kg")
+                    .catch((error) => {
+                        console.error(
+                            `Failed to copy "${text}" to clipboard: ${error}`
+                        );
+                    });
+            }
+        </script>
+    </body>
+</html>
